@@ -59,7 +59,7 @@
 					<h2>GENERATE REPORT</h2>
 				</div>
 			</a>
-			<a href="">
+			<a href="" onclick='exitPage()'>
 				<div class="selection-links">
 					<img src="images/icons/exit.png" alt="exit" class="icon-link">
 					<h2>EXIT APPLICATION</h2>
@@ -68,6 +68,9 @@
 		</div>
 	</div>
 	<script>
+		function exitPage(){
+			window.close();
+		}
 		function readTotal() {
 			var reservation;
 			var data = JSON.parse(window.localStorage.getItem("Data"));
