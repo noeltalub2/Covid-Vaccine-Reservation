@@ -72,8 +72,8 @@
 			var reservation;
 			var data = JSON.parse(window.localStorage.getItem("Data"));
 
-			if (data == null || data == undefined) {
-				reservation = 0;
+			if (data == null) {
+				reservation = [];
 			}
 			else {
 				reservation = data;
