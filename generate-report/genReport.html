@@ -58,7 +58,7 @@
         var adult = 0;
         var data = JSON.parse(window.localStorage.getItem("Data"));
 
-        if (data == null || data == undefined) {
+        if (data == null) {
             array = [];
         }
         else {
@@ -88,6 +88,5 @@
             table.innerHTML = datahtml;
 	    }
         showData();
-    
     </script>
 </body>
